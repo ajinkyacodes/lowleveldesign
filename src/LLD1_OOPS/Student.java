@@ -42,5 +42,8 @@ public class Student {
         shilpa.id = 1;
         shilpa.course = "Backend LLD July";
         shilpa.displayDetails();
+        System.out.println();
+        shilpa.registerForCourse("Java");
+        shilpa.submitAssignment("LLD 1");
     }
 }
