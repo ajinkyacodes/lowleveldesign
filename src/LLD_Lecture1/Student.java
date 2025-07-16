@@ -1,7 +1,7 @@
 package LLD_Lecture1;
 
 public class Student {
-    // attributes of the LLD_Lecture1.Student class
+    // attributes of the Student class
     String name;
     int id;
     String email;
@@ -18,7 +18,7 @@ public class Student {
     }
 
     void displayDetails() {
-        System.out.println("LLD_Lecture1.Student Details: ");
+        System.out.println("Student Details: ");
         System.out.println("Name: " + name);
         System.out.println("ID: " + id);
         System.out.println("Email: " + email);
@@ -26,15 +26,17 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        // We can create real entities from the LLD_Lecture1.Student class
-        LLD_Lecture1.Student prakhar  = new LLD_Lecture1.Student();
+        // We can create real entities from the Student class
+        Student prakhar  = new Student();
         prakhar.name = "Prakhar";
         prakhar.email = "prakhar@gmail.com";
         prakhar.id = 1;
         prakhar.course = "Backend LLD";
         prakhar.displayDetails();
 
-        LLD_Lecture1.Student shilpa  = new LLD_Lecture1.Student();
+        System.out.println();
+
+        Student shilpa  = new Student();
         shilpa.name = "Shilpa";
         shilpa.email = "shilpa@gmail.com";
         shilpa.id = 1;
