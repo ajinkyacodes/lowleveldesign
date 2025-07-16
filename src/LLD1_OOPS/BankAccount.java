@@ -1,4 +1,4 @@
-package LLD_Lecture1;
+package LLD1_OOPS;
 
 public class BankAccount {
     double balance;

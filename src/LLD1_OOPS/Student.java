@@ -1,4 +1,4 @@
-package LLD_Lecture1;
+package LLD1_OOPS;
 
 public class Student {
     // attributes of the Student class
