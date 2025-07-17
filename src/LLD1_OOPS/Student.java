@@ -6,6 +6,7 @@ public class Student {
     int id;
     String email;
     String course;
+    int age;
 
     // Behaviours of the student class
     void registerForCourse(String newCourse){
@@ -23,6 +24,14 @@ public class Student {
         System.out.println("ID: " + id);
         System.out.println("Email: " + email);
         System.out.println("Course: " + course);
+    }
+
+    void display() {
+        System.out.println("My name is " + name + ". I am " + age + " years old");
+    }
+
+    void sayHello(String name) {
+        System.out.println(this.name + " says hello to " + name);
     }
 
     public static void main(String[] args) {
@@ -45,5 +54,13 @@ public class Student {
         System.out.println();
         shilpa.registerForCourse("Java");
         shilpa.submitAssignment("LLD 1");
+
+        System.out.println();
+
+        Student student = new Student();
+        student.name = "Aman";
+        student.age = 20;
+        student.display();
+        student.sayHello("Ramesh");
     }
 }
