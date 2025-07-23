@@ -1,4 +1,4 @@
-package LLD3.Assignments;
+package LLD3.Assignments.PointThreePointProblem;
 
 public class Point {
     // write the code of point class here
