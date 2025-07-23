@@ -1,4 +1,4 @@
-package LLD1.OOPS;
+package LLD1.Assignments;
 
 public class Bank {
     // write the code of bank account class here

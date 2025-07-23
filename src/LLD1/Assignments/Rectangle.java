@@ -1,4 +1,4 @@
-package LLD1.OOPS;
+package LLD1.Assignments;
 
 public class Rectangle {
     // write the code of rectangle class here
