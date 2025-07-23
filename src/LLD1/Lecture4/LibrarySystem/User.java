@@ -9,8 +9,11 @@ public abstract class User {
 
     private static int idCounter = 0;
 
+    private static int totalUsers = 0;
+
     public User() {
         this.userId = generateUniqueId();
+        this.totalUsers++;
     }
 
     private String generateUniqueId() {
@@ -28,6 +31,7 @@ public abstract class User {
         this.userId = other.userId;
         this.name = other.name;
         this.contactInfo = other.contactInfo;
+        totalUsers++;
     }
 
     // Getter and Setter
@@ -50,6 +54,10 @@ public abstract class User {
 
     public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
+    }
+
+    public static int getTotalUsers() {
+        return totalUsers;
     }
 
     public abstract void displayDashboard();

@@ -22,10 +22,14 @@ public class Main {
 //        User user2 = new User(user1);
 //        System.out.println("DEBUG");
 
-        Member member = new Member(10);
+//        Member member = new Member(10);
+//
+//        member.displayDashboard();
+//        member.canBorrowBooks();
 
-        member.displayDashboard();
-        member.canBorrowBooks();
+        Librarian librarian = new Librarian("123");
+        librarian.generateUniqueId();
+        System.out.println("DEBUG");
 
     }
 }

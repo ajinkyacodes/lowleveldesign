@@ -24,6 +24,10 @@ public class Librarian extends User {
         return true;
     }
 
+    public String generateUniqueId() {
+        return String.valueOf(0);
+    }
+
 //    public void addNewBook(Book book) {
 //
 //    }
