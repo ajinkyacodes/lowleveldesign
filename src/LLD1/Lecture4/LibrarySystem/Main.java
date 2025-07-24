@@ -28,7 +28,7 @@ public class Main {
 //        member.canBorrowBooks();
 
         Librarian librarian = new Librarian("123");
-        librarian.generateUniqueId();
+        librarian.displayDashboard();
         System.out.println("DEBUG");
 
     }
