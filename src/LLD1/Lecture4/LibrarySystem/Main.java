@@ -32,7 +32,16 @@ public class Main {
 //        System.out.println("DEBUG");
 
 
-        Book book = new Book("ISBN123", "Harry Potter", "JK Rowling", true) {
+        Book TextBook = new Book("ISBN123", "Applied Mathematics", "RS Agrawal", true) {
+            @Override
+            public void displayBookDetails() {
+                System.out.println(this.getIsbn());
+                System.out.println(this.getTitle());
+                System.out.println(this.getAuthor());
+            }
+        };
+
+        Book NovelBook = new Book("ISBN124", "Harry Potter", "JK Rowling", true) {
             @Override
             public void displayBookDetails() {
                 System.out.println(this.getIsbn());
@@ -53,14 +62,22 @@ public class Main {
             }
         };
 
+        Member member = new Member("Madan Patil", "4512125456", 10);
+
+        Librarian librarian = new Librarian("Rahul Yadav", "5845454545", "EMP120");
+
+
         LibraryManagementSystem lms = new LibraryManagementSystem();
 
-        lms.addBook(book);
+        lms.addBook(TextBook);
+        lms.addBook(NovelBook);
+
+        lms.registerUser(member);
+        lms.registerUser(librarian);
+
         lms.displayAllBooks();
-
-        lms.registerUser(user);
-
         lms.displayRegisteredUsers();
+
 
     }
 }
