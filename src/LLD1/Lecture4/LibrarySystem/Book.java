@@ -22,6 +22,34 @@ public abstract class Book implements Lendable {
         this.isAvailable = other.isAvailable;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
     public boolean lend(User user) {
         if(isAvailable && user.canBorrowBooks()) {
             isAvailable = false;

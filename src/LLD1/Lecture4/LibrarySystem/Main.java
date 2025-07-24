@@ -27,9 +27,40 @@ public class Main {
 //        member.displayDashboard();
 //        member.canBorrowBooks();
 
-        Librarian librarian = new Librarian("123");
-        librarian.displayDashboard();
-        System.out.println("DEBUG");
+//        Librarian librarian = new Librarian("123");
+//        librarian.displayDashboard();
+//        System.out.println("DEBUG");
+
+
+        Book book = new Book("ISBN123", "Harry Potter", "JK Rowling", true) {
+            @Override
+            public void displayBookDetails() {
+                System.out.println(this.getIsbn());
+                System.out.println(this.getTitle());
+                System.out.println(this.getAuthor());
+            }
+        };
+
+        User user = new User("Ajinkya", "5451211222") {
+            @Override
+            public void displayDashboard() {
+                System.out.println("User Dashboard");
+            }
+
+            @Override
+            public boolean canBorrowBooks() {
+                return true;
+            }
+        };
+
+        LibraryManagementSystem lms = new LibraryManagementSystem();
+
+        lms.addBook(book);
+        lms.displayAllBooks();
+
+        lms.registerUser(user);
+
+        lms.displayRegisteredUsers();
 
     }
 }

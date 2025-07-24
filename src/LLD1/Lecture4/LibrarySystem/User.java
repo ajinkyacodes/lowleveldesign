@@ -1,7 +1,5 @@
 package LLD1.Lecture4.LibrarySystem;
 
-import java.util.UUID;
-
 public abstract class User {
     private final String userId;
     private String name;
