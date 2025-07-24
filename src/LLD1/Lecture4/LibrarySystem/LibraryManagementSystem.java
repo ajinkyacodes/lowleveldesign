@@ -27,5 +27,23 @@ public class LibraryManagementSystem {
         }
     }
 
+    public static List<Book> searchBooks(String criteria) {
+        List<Book> result = new ArrayList<>();
+        for(Book book : bookInventory) {
+            if(book.toString().contains(criteria)) {
+                result.add(book);
+            }
+        }
+        return result;
+    }
 
+    public static List<Book> searchBooks(String criteria, String type) {
+        List<Book> result = new ArrayList<>();
+        for (Book book : bookInventory) {
+            if (book.toString().contains(criteria) && book.getClass().getSimpleName().equalsIgnoreCase(type)) {
+                result.add(book);
+            }
+        }
+        return result;
+    }
 }
