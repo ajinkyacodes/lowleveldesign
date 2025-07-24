@@ -67,20 +67,33 @@ public class Main {
         Librarian librarian = new Librarian("Rahul Yadav", "5845454545", "EMP120");
 
 
-        LibraryManagementSystem lms = new LibraryManagementSystem();
-
+//        LibraryManagementSystem lms = new LibraryManagementSystem();
+//
 //        lms.addBook(TextBook);
 //        lms.addBook(NovelBook);
-//
+
 //        lms.registerUser(member);
 //        lms.registerUser(librarian);
 //
 //        lms.displayAllBooks();
 //        lms.displayRegisteredUsers();
 
-        TextBook.lend(member);
-        TextBook.lend(librarian);
-        TextBook.isAvailable();
+        //Testing Book Return
+//        TextBook.lend(member);
+//        TextBook.lend(librarian);
+//        TextBook.returnBook(member);
+//        TextBook.lend(librarian);
+//        TextBook.isAvailable();
 
+//        List<Book> result = lms.searchBooks("Harry Potter");
+//        for(Book res: result) {
+//            System.out.println(res);
+//        }
+
+        NovelBook novelBook = new NovelBook("ISBN456", "Harry Potter", "JK Rowling", "Fiction");
+        novelBook.displayBookDetails();
+
+        TextBook textBook = new TextBook("ISBN458", "Applied Maths", "RS Agrawal", "Maths", 5);
+        textBook.displayBookDetails();
     }
 }
