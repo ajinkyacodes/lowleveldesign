@@ -53,8 +53,10 @@ public abstract class Book implements Lendable {
     public boolean lend(User user) {
         if(isAvailable && user.canBorrowBooks()) {
             isAvailable = false;
+            System.out.println("Lending operation is successful.");
             return true;
         }
+        System.out.println("Lending operation FAILED.");
         return false;
     }
 
@@ -63,6 +65,11 @@ public abstract class Book implements Lendable {
     }
 
     public boolean isAvailable() {
+        if(isAvailable == true) {
+            System.out.println("Book is available for lending.");
+        } else {
+            System.out.println("Book is not available.");
+        }
         return isAvailable;
     }
 

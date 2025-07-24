@@ -31,6 +31,7 @@ public class Member extends User {
         if(borrowedBooksCount < MAXX_BORROW_LIMIT) {
             return true;
         }
+        System.out.println("User exceeded their borrowing limit.");
         return false;
     }
 }

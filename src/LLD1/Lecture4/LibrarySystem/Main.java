@@ -62,22 +62,25 @@ public class Main {
             }
         };
 
-        Member member = new Member("Madan Patil", "4512125456", 10);
+        Member member = new Member("Madan Patil", "4512125456", 3);
 
         Librarian librarian = new Librarian("Rahul Yadav", "5845454545", "EMP120");
 
 
         LibraryManagementSystem lms = new LibraryManagementSystem();
 
-        lms.addBook(TextBook);
-        lms.addBook(NovelBook);
+//        lms.addBook(TextBook);
+//        lms.addBook(NovelBook);
+//
+//        lms.registerUser(member);
+//        lms.registerUser(librarian);
+//
+//        lms.displayAllBooks();
+//        lms.displayRegisteredUsers();
 
-        lms.registerUser(member);
-        lms.registerUser(librarian);
-
-        lms.displayAllBooks();
-        lms.displayRegisteredUsers();
-
+        TextBook.lend(member);
+        TextBook.lend(librarian);
+        TextBook.isAvailable();
 
     }
 }
