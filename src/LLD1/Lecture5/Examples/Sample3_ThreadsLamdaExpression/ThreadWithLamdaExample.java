@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample3;
+package LLD1.Lecture5.Examples.Sample3_ThreadsLamdaExpression;
 
 public class ThreadWithLamdaExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample2;
+package LLD1.Lecture5.Examples.Sample2_SimpleRunnable;
 
 public class SimpleRunnable implements Runnable {
     @Override

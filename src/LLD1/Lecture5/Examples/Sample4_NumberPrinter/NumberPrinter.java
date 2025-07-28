@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample4;
+package LLD1.Lecture5.Examples.Sample4_NumberPrinter;
 
 public class NumberPrinter implements Runnable {
     private int number;

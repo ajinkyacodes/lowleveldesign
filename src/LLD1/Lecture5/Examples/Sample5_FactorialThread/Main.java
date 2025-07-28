@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample5;
+package LLD1.Lecture5.Examples.Sample5_FactorialThread;
 
 import java.util.ArrayList;
 import java.util.Arrays;

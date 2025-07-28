@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample5;
+package LLD1.Lecture5.Examples.Sample5_FactorialThread;
 
 import java.math.BigInteger;
 

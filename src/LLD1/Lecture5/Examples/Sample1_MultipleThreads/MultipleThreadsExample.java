@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample1;
+package LLD1.Lecture5.Examples.Sample1_MultipleThreads;
 
 public class MultipleThreadsExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package LLD1.Lecture5.Examples.Sample1;
+package LLD1.Lecture5.Examples.Sample1_MultipleThreads;
 
 public class NewThread extends Thread {
     public void run() {
