@@ -23,3 +23,5 @@ Threads: A lightweight process.
 
 One process can have one or multiple threads. 
 
+
+[Detailed Notes on Processes and Threads](https://github.com/KingsGambitLab/Lecture_Notes/blob/master/Non-DSA%20Notes/LLD1%20Notes/Concurrency%2001%20-%20Processes%20%26%20Threads.md)
