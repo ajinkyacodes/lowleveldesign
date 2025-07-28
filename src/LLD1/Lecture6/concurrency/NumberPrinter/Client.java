@@ -31,5 +31,13 @@ Printing numbers with a fixed pool
 Cached thread Pool:
 This pool creates a new thread if no idle thread is available.
 
+When to use it?
+Excellent for short-lived, I/O bound tasks
+e.g. handling requests in a web server where threads spend a lot of
+time waiting for network or DB responses.
+
+WARNING: A cached pool can grow without limit.
+If tasks are long-running, then you end up creating a lot of threads
+and running out of memory.
 
  */
