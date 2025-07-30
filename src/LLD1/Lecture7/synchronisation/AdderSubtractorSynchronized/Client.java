@@ -1,4 +1,4 @@
-package LLD1.Lecture7.synchronisation.AdderSubtractor;
+package LLD1.Lecture7.synchronisation.AdderSubtractorSynchronized;
 
 public class Client {
     public static void main(String[] args) throws InterruptedException {
@@ -29,7 +29,7 @@ public class Client {
         t1.join();
         t2.join();
 
-        System.out.println(count.value); // Problem: Not Synchronized.
-        // Different values every time. Actual answer should return 0
+        System.out.println(count.value); // Problem Fixed: Now It's Synchronized.
+        // Actual answer always returns 0
     }
 }

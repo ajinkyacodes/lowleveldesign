@@ -10,11 +10,9 @@ public class Adder implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 1; i <= 10; i++) {
-            synchronized (count) {
-                count.value += i;
-                System.out.println("Adder value: " + count.value);
-            }
+        for (int i = 1; i <= 10000; i++) {
+            count.value += i;
+            System.out.println("Adder value: " + count.value);
         }
     }
 }
